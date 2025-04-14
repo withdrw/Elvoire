@@ -1,0 +1,38 @@
+.main-navbar {
+    position: fixed;
+    bottom: 85%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+  }
+  .elvoire-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+  
+  }
+  .landing-page{
+    display: flex;
+    padding-top: 10px;
+    height: 12%;
+    border-bottom: 3px solid black;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: black;
+  }
+  .main-links li{
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  .main-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
