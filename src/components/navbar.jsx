@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./Landingpage.css";
+import "./navbar.css";
 import image from '../assets/image.png';
 
 

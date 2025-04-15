@@ -19,10 +19,6 @@
     height: 12%;
     border-bottom: 3px solid black;
   }
-  .nav-link{
-    text-decoration: none;
-    color: black;
-  }
   .main-links li{
     gap: 20px;
     justify-content: flex-end;
@@ -35,4 +31,15 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
+  }
+  .nav-link:hover {
+    padding: 0 0 2px 0;
+    border-bottom: 2px solid #333;
+    transition: border-bottom 0.1s ;
+  }
+  .nav-link{
+    line-height: 1.5px;
+    position: relative;
+    text-decoration: none;
+    color: black;
   }
