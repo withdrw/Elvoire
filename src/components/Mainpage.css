@@ -24,3 +24,17 @@
     cursor: pointer;
     pointer-events: auto;
   }
+  .gate-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* z-index: 1; */
+  }
+  
+  .gate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -1,0 +1,17 @@
+.pricing-container {
+    display: flex;
+  }
+  
+  .plan-box {
+    height: 200px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+ 
+  
+
+  
