@@ -18,9 +18,9 @@ export default class MainPage extends Component {
 
     return (
         <div className="main-container">
-        <h1>main page</h1>
+        <h1>Elovire</h1>
+        <p>Meet Elvoire, your partner in scaling your brand to success</p>
         <div className='gate-img'>
-  <img key={gate} className='gate' src={gate} />
 </div>
       </div>
     )
