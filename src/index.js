@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Landingpage from './components/navbar.jsx';
 import MainPage from './components/MainPage.jsx';
-import Packages from './components/Packages.jsx';
+// import Packages from './components/Packages.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Landingpage />
-    <Packages />
+    {/* <Packages /> */}
     <MainPage />
     <App />
   </React.StrictMode>
