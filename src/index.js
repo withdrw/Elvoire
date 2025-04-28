@@ -5,15 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Landingpage from './components/navbar.jsx';
 import MainPage from './components/MainPage.jsx';
+import MainPage2 from './components/Mainpage2.jsx';
 // import Packages from './components/Packages.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Landingpage />
+    <MainPage2 />
     {/* <Packages /> */}
-    <MainPage />
-    <App />
+    {/* <MainPage /> */}
+    {/* <App /> */}
   </React.StrictMode>
 );
 
