@@ -1,28 +1,41 @@
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 import "./Mainpage.css";
-import gate from "../assets/gate.png";
-// const mainContainer = document.querySelector('.main-container');
-const colors = ['red', 'orange', 'black', 'cyan', 'blue', 'purple'];
-let index = 0;
+import { GiHamburgerMenu } from "react-icons/gi";
+import bg from "../assets/two-tone.jpg";
+import {motion} from 'motion/react'
 
-document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('main-container')) {
-      e.target.style.backgroundColor = colors[index];
-      index + 1 === colors.length ? index = 0 : index += 1;
-    }
-  });
+const MainPage = () => {
 
-export default class MainPage extends Component {
-  render() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-
-    return (
-        <div className="main-container">
-        <h1>Elovire</h1>
-        <p>Meet Elvoire, your partner in scaling your brand to success</p>
-        <div className='gate-img'>
-</div>
-      </div>
-    )
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   }
+
+  return (
+    <div className='main-container'>
+      <section className="main">
+        <div className="navbar">  
+        <h1 className='elvoire'>Elvoire</h1>
+        <div className="hamburg" onClick={toggleMenu}>
+          <GiHamburgerMenu className='icon-ham' />
+          {menuOpen && (
+            <div className="links">
+          <a className="line apply">Apply Now</a>
+          <a className="line contact">Contact Us</a>
+          <a className="line about">About Us</a>
+          </div>
+          )}
+        </div>
+        </div>
+      </section>
+      <section className="first">
+        <div className="first">
+
+        </div>
+      </section>
+    </div>
+  )
 }
+
+export default MainPage
