@@ -31,7 +31,25 @@ const MainPage = () => {
       </section>
       <section className="first">
         <div className="first">
-
+          <motion.div
+  initial={{ y: 0 }}
+  animate={{ y: [0, -50, 0] }}
+  transition={{ duration: 2, repeat: 2 }}
+  style={{
+    backgroundColor: 'black',
+    borderRadius: 10,
+    position: 'absolute',
+    top: '20%',
+    transform: 'translateY(-50%)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'start',
+  }}
+          >
+            <h2 style={{ color: 'white', fontSize: 20 }}>Welcome to Elvoire</h2>
+            <p style={{ color: 'white', fontSize: 20 , marginTop: 10}}>We are a team of experts in scaling your brand to success</p>
+          </motion.div>
         </div>
       </section>
     </div>
